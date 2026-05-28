@@ -10,7 +10,7 @@ output:
 
 ```{r}
 library(readxl) # untuk membaca data
-library(GGally) # untuk menghasilkan matriks hubungan antarpeubah
+install.packages("readxl")
 library(corrplot) # untuk menghasilkan matriks korelasi
 library(dplyr) # untuk manipulasi data
 library(car) # untuk memeriksa multikolinearitas
