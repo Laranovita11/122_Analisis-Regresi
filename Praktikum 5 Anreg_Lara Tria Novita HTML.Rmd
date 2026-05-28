@@ -19,7 +19,7 @@ library(car) # untuk memeriksa multikolinearitas
 # Data
 
 ```{r}
-data <- read_excel("C:\\Users\\Hp\\Downloads\\Data NTT.xlsx")
+data <- read_excel("C:/Users/Hp/OneDrive/Desktop/Documents/Analisis Regresi/Data NTT.xlsx")
 head(data) # menampilkan sekian data awal
 str(data) # menampilkan tipe data setiap peubah
 summary(data) # menampilkan ringkasan data
@@ -42,13 +42,6 @@ hist(dt$PPM, main = "Sebaran Persentase Penduduk Miskin")
 
 ```{r}
 boxplot(dt$PPM, main = "Sebaran Persentase Penduduk Miskin")
-```
-
-```{r}
-ggpairs(dt,
-        upper = list(continuous = wrap('cor', size = 3)),
-        title = "Matriks Scatterplot Data")
-
 ```
 
 ```{r}
